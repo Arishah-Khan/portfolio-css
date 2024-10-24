@@ -1,11 +1,6 @@
-import { Poppins } from "next/font/google";
 import TypescriptCard from "./typescript-card";
 import "@/styles/typescript.css"; // Import custom CSS
 
-const poppins = Poppins({
-    subsets: ["latin"],
-    weight: ["400", "600", "700"],
-});
 
 
 const projects = [

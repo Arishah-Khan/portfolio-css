@@ -1,13 +1,8 @@
 "use client";
 import { useState } from 'react';
 import Swal from 'sweetalert2';
-import { Poppins } from "next/font/google";
-import '@/styles/contact.css'; // Import the external CSS file
+import '@/styles/contact.css'; 
 
-const poppins = Poppins({
-    subsets: ["latin"],
-    weight: ["400", "600", "700"],
-});
 
 export default function ContactMe() {
     const [loading, setLoading] = useState(false);
