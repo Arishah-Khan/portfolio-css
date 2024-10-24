@@ -5,7 +5,7 @@ import "@/styles/js.css";
 const jsProjects = [
     {
         name: "Calculator",
-        images: ["/images/jsCal1.png", "/images/jsCal2.png"],
+        images: ["/images/jscal1.png", "/images/jscal2.png"],
         demoLink: "https://arishah-khan.github.io/Calculator-javascript/",
         codeLink: "https://github.com/Arishah-Khan/Calculator-javascript",
         bgColor: "#B80000", 
