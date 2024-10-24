@@ -1,0 +1,14 @@
+/* ProjectButton.css */
+
+.project-button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.project-button:hover {
+    background-color: var(--hover-bg-color);
+    color: var(--hover-text-color);
+}

@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume_btn {
+    position: relative;
+    background-color: #071fa8; /* Button background color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+.resume_btn:hover {
+    background-color: #0a24d4; /* Change on hover */
+}
+

@@ -1,0 +1,93 @@
+/* HtmlCssProjects.module.css */
+
+/* Main container styling */
+.mainContainer {
+    background-color: #ebeae9;
+    padding-bottom: 2.5rem ;
+  }
+  
+  /* Project heading */
+  .projectsHeading {
+    color: #071fa8;
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+  
+  /* Grid container for the projects */
+  .projectsGrid {
+    display: grid;
+    grid-template-columns: 1fr; /* Default for mobile: 1 column */
+    gap: 1rem; /* Gap between project cards */
+    padding: 1rem;
+    justify-content: center; /* Center items horizontally in the grid */
+    align-items: center; /* Center items vertically in the grid */
+    max-width: 100%; /* Allow the grid to use full available width */
+    margin: 0 auto; /* Center the grid container */
+  }
+  /* Medium screen (md) and up: 2 columns */
+  @media (min-width: 768px) {
+    .projectsGrid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+  }
+  
+  /* Large screen (lg) and up: 3 columns */
+  @media (min-width: 1024px) {
+    .projectsGrid {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+  }
+  
+  /* Project card styling */
+  .projectCard {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for project cards */
+  .projectCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .width-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .projectDescription,.sectionHeading{
+  margin: 5px 10px;
+  padding-top: 10px;
+ }
+
+ .projectsHeading{
+  font-size: 1.5rem;
+ }
+
+ @media (min-width: 640px) { /* For small devices and up */
+  .projectsHeading {
+      font-size: 1.875rem; /* sm:text-3xl */
+      font-weight: 700; /* Smaller font weight */
+  }
+
+}
+
+@media (min-width: 768px) { /* For medium devices and up */
+  .projectsHeading {
+      font-size: 2.25rem; /* md:text-4xl */
+      font-weight: 900; /* Keep bold for medium screens */
+  }
+}
+
+@media (min-width: 1024px) { /* For large devices and up */
+  .projectsHeading {
+      font-size: 2.5rem; /* lg:text-5xl */
+      font-weight: 800; /* Keep bold for large screens */
+  }
+}

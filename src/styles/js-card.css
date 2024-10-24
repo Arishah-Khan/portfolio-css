@@ -1,0 +1,72 @@
+/* Card container */
+.project-card {
+    border: 1px solid; /* Set dynamic border from inline style */
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.project-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+
+/* Heading styles */
+.card-heading {
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+/* Image container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Image sizes */
+.image-large {
+    width: 130px;
+    height: 90px;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 2px solid;
+}
+
+.image-small {
+    width: 90px;
+    height: 160px;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 2px solid;
+}
+
+/* Button container */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Button styles (handled by ProjectButton component) */
+
+.cardContainer{
+    width: 310px;
+    height: 340px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+@media (max-width: 380px) {
+    .cardContainer{
+        width: 280px;
+    }
+}

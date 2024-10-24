@@ -1,0 +1,111 @@
+.grid {
+    /* Add margin at the top */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 10px 80px;
+    background-color: white;
+}
+
+.gridCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 2 columns on small screens */
+    gap: 1rem;
+    /* Add gap between the items */
+    width: 100%;
+    /* Full width */
+    margin: 0 auto;
+    /* Center the grid */
+}
+
+.description {
+    color: #4a5568;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.title {
+    padding-bottom: 5px;
+    margin: 10px 0px;
+
+}
+
+@media (min-width: 640px) {
+    .gridCard {
+        grid-template-columns: repeat(4, 1fr);
+        /* 3 columns on medium screens */
+        gap: 1.25rem;
+        /* Increase gap */
+    }
+}
+
+@media (min-width: 1024px) {
+    .gridCard {
+        grid-template-columns: repeat(6, 1fr);
+        /* 6 columns on large screens */
+        gap: 1.5rem;
+        /* More spacing between items */
+    }
+}
+
+.skillCard {
+    background-color: #ebeae9;
+    padding: 10px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 70px;
+    /* Reduce the max-width to avoid large cards */
+    margin: 0 auto;
+    width: 100%;
+    /* Full width of the grid item */
+    height: 70px;
+}
+
+.skillCard:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.skillImage {
+
+    width: 40px;
+    /* Smaller width */
+    height: 40px;
+}
+
+@media (min-width: 640px) {
+    .skillImage {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
+    }
+
+    .skillCard {
+        padding: 15px;
+        max-width: 100px;
+        /* Reduce the max-width to avoid large cards */
+        height: 100px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .skillImage {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.skillName {
+    font-size: 0.875rem;
+    /* Smaller font size */
+    font-weight: 600;
+    color: #4a5568;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    margin-top: 1px;
+}

@@ -1,0 +1,82 @@
+.projects-main {
+    background-color: #ebeae9;
+    padding: 2.5rem 0;
+}
+
+.projects-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.25rem;
+}
+
+.projects-description {
+    padding-bottom: 2rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-size: 0.875rem;
+}
+
+.pro-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+@media (min-width: 768px) {
+    .pro-grid {
+        flex-direction: row;
+    }
+}
+
+/* Ice Cream Project Styles */
+.ice-bg {
+    background-color: #d6206b;
+}
+
+.ice-hover-bg {
+    background-color: #f5d0e0;
+    border: 2px solid #d6206b;
+}
+
+.ice-heading {
+    color: #d6206b;
+    border-color: #d6206b;
+}
+
+.ice-card-bg {
+    background-color: #fdc8df;
+}
+
+/* Grocery Project Styles */
+.grocery-bg {
+    background-color: #1e5e3f;
+}
+
+.grocery-hover-bg {
+    background-color: #dddad0;
+    border: 2px solid #1e5e3f;
+}
+
+.grocery-heading {
+    color: #1e5e3f;
+    border-color: #1e5e3f;
+}
+
+.grocery-card-bg {
+    background-color: #c5ead8;
+}
+
+/* Shared Styles */
+.text-white {
+    color: white;
+}
+
+.hover-black:hover {
+    color: black;
+}

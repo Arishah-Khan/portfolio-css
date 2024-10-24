@@ -1,0 +1,79 @@
+/* General container styling */
+.typescript-projects-container {
+    background-color: #ebeae9;
+
+}
+
+/* Title styling */
+.projects-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 10px 5;
+
+
+}
+
+/* Description styling */
+.projects-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+  .projects-crd {
+    margin: 20px; /* Space between cards */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s; /* Smooth scaling effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.projects-crd:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.projectsGrds {
+    display: grid;
+    grid-template-columns: 1fr; /* Default for mobile: 1 column */
+    gap: 1rem; /* Gap between project cards */
+    
+    justify-content: center; /* Center items horizontally in the grid */
+    align-items: center; /* Center items vertically in the grid */
+  
+}
+
+/* Medium screen (md) and up: 3 columns */
+@media (min-width: 768px) {
+    .projectsGrds {
+        grid-template-columns: repeat(2, 1fr); /* 3 columns on medium screens */
+    }
+}
+
+/* Large screen (lg) and up: 4 columns */
+@media (min-width: 1024px) {
+    .projectsGrds {
+        grid-template-columns: repeat(3, 1fr); /* 4 columns on large screens */
+    }
+}
+
+
+.projects-crd {
+    margin: 20px; /* Space between cards */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s; /* Smooth scaling effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.projects-crd:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}

@@ -1,0 +1,100 @@
+/* ContactMe.css */
+.section-contact {
+    background-color: #fafafa;
+    padding: 3rem 1.5rem;
+}
+
+.contact-container {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    background-color: #ebeae9;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.contact-title {
+    color: #071fa8;
+    font-size: 2rem;
+    font-weight: 800;
+    padding-top: 1rem;
+    margin: 0;
+}
+
+.contact-description {
+    padding: 1rem;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.contact-form {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    
+}
+
+.flex-gap {
+    display: flex;
+    flex-direction: column; /* Change to column for small screens */
+    gap: 1.5rem;
+}
+
+.input-group {
+    position: relative;
+    flex: 1;
+}
+
+.input-field,
+.textarea-field {
+    padding: 0.5rem;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    color: #071fa8;
+    outline: none;
+    margin-top: 10px;
+    padding: 10px 5px;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button:hover {
+    background-color: #071fa8;
+}
+
+.submit-button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .flex-gap {
+        flex-direction: row; /* Row layout for larger screens */
+    }
+    .input-group {
+        flex: 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-title {
+        font-size: 1.5rem; /* Smaller title size for mobile */
+    }
+    .contact-description {
+        font-size: 0.875rem; /* Smaller description font */
+    }
+}
