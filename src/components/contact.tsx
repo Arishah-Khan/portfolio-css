@@ -44,7 +44,7 @@ export default function ContactMe() {
     };
 
     return (
-        <section id="contact" className="section-contact">
+        <section className="section-contact">
             <div className="contact-container">
                 <h2 className="contact-title">
                     Get In Touch

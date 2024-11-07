@@ -1,0 +1,23 @@
+
+
+.filter-btn{
+    padding: 10px 14px;
+    border-radius: 4px
+}
+
+.selected{
+    background-color: #472716;
+    color: white;
+
+}
+
+.not-selected{
+    background-color: #e8d8c2;
+}
+
+@media (max-width:480px) {
+    .filter-btn{
+        padding: 8px;
+        border-radius: 4px
+    }
+}

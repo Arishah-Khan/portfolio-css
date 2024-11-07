@@ -30,12 +30,12 @@ const NextjsCard = ({
     cardbg,
 }: CardProps) => {
     return (
-        <div className={`card-container ${cardbg} ${headingColour}`}>
+        <div className={`cards-container ${cardbg} ${headingColour}`}>
             <h3 className={`card-title ${headingColour}`}>
                 {name}
             </h3>
 
-            <div className="img-container">
+            <div className={`img-container`}>
                 <div className="top-images">
                     {images.slice(0, 2).map((image, i) => (
                         <Image
@@ -43,9 +43,10 @@ const NextjsCard = ({
                             src={image}
                             alt={name}
                             width={120} 
-                            height={100}
+                            height={80}
                             className="project-imag"
-                            style={{ objectFit: 'cover' }}
+                            style={{ objectFit: 'cover',
+                            }}
                         />
                     ))}
                 </div>

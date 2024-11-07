@@ -1,0 +1,29 @@
+.project-section{
+    padding-bottom: 80px;
+    background-color: #f2ece3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.category{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+.choices{
+    width: 100%;
+    margin-top: 10px;
+}
+.heading{
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #4e3d26;
+        text-align: center;
+}
+@media (max-width:480px) {
+    .heading{
+        font-size: 32px;
+    }
+}

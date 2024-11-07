@@ -17,8 +17,6 @@ const ProjectButton = ({
   link,
   bgColor,
   textColor,
-  hoverBgColor,
-  hoverTextColor,
 }: ButtonProps) => {
   const router = useRouter(); // Initialize the router
 
@@ -34,8 +32,6 @@ const ProjectButton = ({
       style={{
         backgroundColor: bgColor, 
         color: textColor, 
-        '--hover-bg-color': hoverBgColor, 
-        '--hover-text-color': hoverTextColor, 
       } as React.CSSProperties}
     >
       {label} 

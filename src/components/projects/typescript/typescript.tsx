@@ -72,8 +72,8 @@ export default function TypescriptProjects() {
     return (
         <main className="typescript-projects-container">
             <section>
-                <h3>TypeScript Projects</h3>
-                <p>Here are some of the projects I have created using TypeScript.</p>
+                <h3 className="sectionHeading">TypeScript Projects</h3>
+                <p className="projectDescription">Here are some of the projects I have created using TypeScript.</p>
 
                 <div className="projectsGrds">
                     {projects.map((project, index) => (

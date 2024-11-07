@@ -4,8 +4,20 @@ import "@/styles/js.css";
 
 const jsProjects = [
     {
+        name: "Resume Builder",
+        images: ["/images/resume1.png", "/images/resume2.png"],
+        demoLink: "https://hackathone-mile-stone4.vercel.app/",
+        codeLink: "https://github.com/Arishah-Khan/hackathoneMileStone4",
+        bgColor: "#464443", 
+        hoverBgColor: "#F09090", 
+        textColor: "white", 
+        hoverTextColor: "#8C0000",
+        headingColour: "#464443",
+        cardbg: "#d0cccd",
+    },
+    {
         name: "Calculator",
-        images: ["/images/jscal1", "/images/jscal2.png"],
+        images: ["/images/jscal1.png", "/images/jscal2.png"],
         demoLink: "https://arishah-khan.github.io/Calculator-javascript/",
         codeLink: "https://github.com/Arishah-Khan/Calculator-javascript",
         bgColor: "#B80000", 
@@ -68,9 +80,9 @@ const jsProjects = [
 export default function JavaScriptProjects() {
     return (
         <main>
-            <section>
-                <h3>JavaScript Projects</h3>
-                <p >
+            <section className="colours">
+                <h3 className="sectionHeading">JavaScript Projects</h3>
+                <p className="projectDescription">
                     Here are some of the projects I have created using JavaScript.
                 </p>
 

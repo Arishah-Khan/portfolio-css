@@ -80,9 +80,6 @@ const projects = [
 export default function HtmlCssProjects() {
   return (
     <main className="mainContainer">
-      <h2 className="projectsHeading">
-        Projects
-      </h2>
 
       <section>
         <h3 className="sectionHeading">HTML, CSS, and Bootstrap Projects</h3>

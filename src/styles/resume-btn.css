@@ -6,8 +6,8 @@
 
 .resume_btn {
     position: relative;
-    background-color: #071fa8; /* Button background color */
-    color: white; /* Text color */
+    background-color: #44311f; 
+    color: white; 
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
@@ -18,6 +18,9 @@
 }
 
 .resume_btn:hover {
-    background-color: #0a24d4; /* Change on hover */
+    background-color: #e5d9c9; 
+    color: #44311f;
+    border: 2px solid #44311f;
+    font-weight: 600;
 }
 

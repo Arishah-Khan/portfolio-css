@@ -2,7 +2,7 @@ import HeroSec from "@/components/hero-section"
 import About from "@/components/about"
 import Skills from "@/components/skills"
 import Projects from "@/components/projects/project"
-import ContactMe from "@/components/contact"
+import ContactSec from "@/components/contact-sec"
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
        <About />
              <Skills />
      <Projects />
-      <ContactMe /> 
+      <ContactSec /> 
     </>
 
   )

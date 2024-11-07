@@ -1,7 +1,7 @@
 // HeroSection.tsx
 import Image from "next/image";
 import ResumeBtn from "./resume-btn";
-import '@/styles/hero-section.css'; // Import the CSS file
+import '@/styles/hero-section.css'; 
 
 
 
@@ -14,10 +14,10 @@ export default function HeroSec() {
                     Hello, I&apos;m
                 </h3>
                 <h1 className="name-text">
-                    Arishah
+                    Arishah Khan
                 </h1>
                 <h2 className="role-text">
-                    Frontend Web Developer
+                    Full Stack Developer
                 </h2>
                 <p className="description-text">
                     I create beautiful and user-friendly interfaces <br /> with ReactJS and NextJS.
@@ -30,10 +30,8 @@ export default function HeroSec() {
                 </div>
             </div>
 
-            {/* Image Section */}
             <div className="image-container">
-                {/* Gradient Image (Background) */}
-                <div className="gradient-bg">
+\                <div className="gradient-bg">
                     <Image
                         src="/images/Gradient.svg"
                         alt="Gradient Background"
@@ -42,14 +40,13 @@ export default function HeroSec() {
                     />
                 </div>
 
-                {/* Profile Image (Foreground) */}
                 <div className="profile-image">
                     <Image
                         src="/images/profile.png"
                         alt="Profile Pic"
                         width={340}
                         height={320}
-                        className="profile-img" // Custom class for the profile image
+                        className="profile-img" 
                     />
                 </div>
             </div>

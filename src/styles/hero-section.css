@@ -1,10 +1,10 @@
 .main-section {
-    scroll-margin-top: 6rem; /* scroll-mt-24 */
+    scroll-margin-top: 6rem; 
     display: grid;
     grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(1, 1fr); /* Default to 1 column */
+    grid-template-columns: repeat(1, 1fr); 
     align-items: center;
-    background-color: #fafafa; /* bg-[#fafafa] */
+    background-color: #f2ece3; 
     padding: 2rem; 
     animation: fadeIn 0.5s; 
     overflow: hidden;
@@ -14,19 +14,16 @@
     margin-bottom: 2rem; 
 }
 
-/* Responsive Styles */
-@media (min-width: 768px) { /* md breakpoint */
+@media (min-width: 768px) {
     .main-section {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Adjust the margin for larger screens */
     .main-section > div {
-        margin-bottom: 0; /* Remove margin-bottom when in 2-column layout */
+        margin-bottom: 0; 
     }
 }
 
-/* Define the fadeIn animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -37,82 +34,103 @@
 }
 
 .text-section {
-    text-align: center; /* Center align text */
-    margin-top: 20px; /* Space at the top */
-    animation: slideInRight; /* Add animation as per your needs */
+    text-align: center; 
+    margin-top: 20px; 
+    animation: slideInRight; 
   }
   
-  /* Greeting Text */
   .greeting-text {
-    color: #4a5568; /* Text gray-700 */
-    font-weight: 600; /* Font-semibold */
-    font-size: 1.25rem; /* Text-xl */
-    padding: 0.5rem 0; /* Py-2 */
+    color: #917046; 
+    font-weight: 600; 
+    font-size: 1.25rem; 
+    padding: 0.5rem 0; 
     margin: 10px 0px;
   }
   
-  /* Name Text */
   .name-text {
-    font-size: 2rem; /* Text-3xl */
-    font-weight: 700; /* Font-bold */
+    font-size: 2rem; 
+    font-weight: 700; 
     margin: 5px 0px;
+    color: #472716;
   }
   
-  /* Role Text */
   .role-text {
-    font-size: 1.25rem; /* Text-xl */
-    color: #071fa8; /* Custom color */
-    font-weight: 700; /* Font-bold */
+    font-size: 1.25rem; 
+    color: #4e3d26; 
+    font-weight: 700; 
     margin: 5px 0px;
   }
   
-  /* Description Text */
   .description-text {
-    font-size: 1rem; /* Text-base */
-    text-align: center; /* Center alignment */
+    font-size: 1rem; 
+    text-align: center; 
   }
   
-  /* Responsive Styles */
-  @media (min-width: 640px) { /* For small devices and up */
+  @media (min-width: 640px) { 
     .greeting-text {
-      font-size: 1.5rem; /* Sm:text-2xl */
+      font-size: 1.5rem; 
     }
     
     .name-text {
-      font-size: 2.25rem; /* Sm:text-4xl */
+      font-size: 2.25rem; 
     }
   
     .role-text {
-      font-size: 1.5rem; /* Sm:text-2xl */
+      font-size: 1.5rem;
     }
   
     .description-text {
-      font-size: 1.125rem; /* Sm:text-lg */
+      font-size: 1.125rem;
     }
   }
   
-  @media (min-width: 768px) { /* For medium devices and up */
+  @media (min-width: 768px) {
     .name-text {
-      font-size: 2.5rem; /* Md:text-5xl */
+      font-size: 2.5rem; 
     }
   
     .role-text {
-      font-size: 1.75rem; /* Md:text-3xl */
+      font-size: 1.75rem;
     }
   
     .description-text {
-      font-size: 1.25rem; /* Md:text-xl */
+      font-size: 1.25rem; 
     }
   }
   
-  @media (min-width: 1024px) { /* For large devices and up */
+  @media (min-width: 1024px) { 
     .name-text {
-      font-size: 3rem; /* Lg:text-6xl */
+      font-size: 3rem; 
     }
   
     .role-text {
-      font-size: 2rem; /* Lg:text-4xl */
+      font-size: 2rem; 
     }
+  }
+
+  @media (max-width:480px) {
+    .main-section{
+      padding: 2px;
+    }
+    .gradient-bg {
+    position: absolute;
+      width: 280px; 
+      height: 275px; 
+      margin-top: 8px; 
+    }
+    
+    .profile-image {
+      position: relative;
+      z-index: 10; 
+      transform: translateY(-10px); 
+    }
+    
+    .profile-img {
+      width: 280px; 
+      height: 300px; 
+      border-radius: 50%; 
+    }
+
   }
   
 
@@ -125,43 +143,37 @@
   
   .gradient-bg {
     position: absolute;
-    width: 290px; /* Default size */
-    height: 280px; /* Default size */
-    margin-top: 8px; /* Margin from the top */
+    width: 290px; 
+    height: 280px; 
+    margin-top: 8px; 
   }
   
   .profile-image {
-    position: relative;
-    z-index: 10; /* Ensure the profile image is above the background */
-    transform: translateY(-10px); /* Adjust the position slightly */
+    z-index: 10;
   }
   
   .profile-img {
-    width: 290px; /* Width of the profile image */
-    height: 320px; /* Height of the profile image */
-    border-radius: 50%; /* Make it circular */
+    width: 290px; 
+    height: 320px; 
+    border-radius: 50%;
   }
   
-  /* Responsive Styles */
-  @media (min-width: 640px) { /* For small devices and up */
+  @media (min-width: 640px) { 
     .gradient-bg {
-      width: 370px; /* Adjust size */
-      height: 370px; /* Adjust size */
+      width: 370px; 
+      height: 370px; 
     }
   
     .profile-img {
-      width: 360px; /* Adjust size */
-      height: 410px; /* Adjust size */
+      width: 360px; 
+      height: 410px; 
     }
   }
   
 
-
-
-/* Media query for smaller screens */
 @media (max-width: 768px) {
 
     .image-section {
-        margin-top: 20px; /* Space above image section on smaller screens */
+        margin-top: 20px; 
     }
-}
+  } 

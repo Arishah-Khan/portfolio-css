@@ -29,10 +29,12 @@ const JavascriptCard = ({
 }: CardProps) => {
     return (
         <div
-            className="cardContainer"
+            className="card-container"
             style={{
                 backgroundColor: cardbg, 
                 borderColor: headingColour, 
+                border: `2px solid ${headingColour}`,
+                transition: "background-color 0.3s ease", 
             }}>
             <h3
                 className="card-heading"

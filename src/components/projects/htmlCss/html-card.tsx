@@ -32,7 +32,7 @@ const ProjectHtmlCard = ({
             style={{
                 backgroundColor: cardbg, 
                 color: textColor,
-                border: `1px solid ${headingColour}`,
+                border: `2px solid ${headingColour}`,
                 transition: "background-color 0.3s ease", 
             }}
             className={`card-container`}
@@ -51,8 +51,8 @@ const ProjectHtmlCard = ({
                         key={i}
                         src={image}
                         alt={name}
-                        width={i === 0 ? 120 : 50}
-                        height={i === 0 ? 90 : 180}
+                        width={i === 0 ? 130 : 70}
+                        height={i === 0 ? 70 : 180}
                         className={`project-image ${i === 0 ? 'project-image-large' : 'project-image-small'} ${headingColour}`}
                         style={{
                             border: `2px solid ${headingColour}`,

@@ -1,28 +1,23 @@
 .grid {
-    /* Add margin at the top */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px 10px 80px;
-    background-color: white;
+    padding: 30px 10px 80px;
+    background-color: #f2ece3;
 }
 
 .gridCard {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* 2 columns on small screens */
     gap: 1rem;
-    /* Add gap between the items */
     width: 100%;
-    /* Full width */
     margin: 0 auto;
-    /* Center the grid */
 }
 
 .description {
     color: #4a5568;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .title {
@@ -34,35 +29,29 @@
 @media (min-width: 640px) {
     .gridCard {
         grid-template-columns: repeat(4, 1fr);
-        /* 3 columns on medium screens */
         gap: 1.25rem;
-        /* Increase gap */
     }
 }
 
 @media (min-width: 1024px) {
     .gridCard {
         grid-template-columns: repeat(6, 1fr);
-        /* 6 columns on large screens */
         gap: 1.5rem;
-        /* More spacing between items */
     }
 }
 
 .skillCard {
-    background-color: #ebeae9;
+    background-color: #e5d9c9;
     padding: 10px;
     border-radius: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px #e5d9c9;
     transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 70px;
-    /* Reduce the max-width to avoid large cards */
     margin: 0 auto;
     width: 100%;
-    /* Full width of the grid item */
     height: 70px;
 }
 
@@ -74,7 +63,6 @@
 .skillImage {
 
     width: 40px;
-    /* Smaller width */
     height: 40px;
 }
 
@@ -88,7 +76,6 @@
     .skillCard {
         padding: 15px;
         max-width: 100px;
-        /* Reduce the max-width to avoid large cards */
         height: 100px;
     }
 }
@@ -102,10 +89,15 @@
 
 .skillName {
     font-size: 0.875rem;
-    /* Smaller font size */
     font-weight: 600;
     color: #4a5568;
     text-align: center;
     margin-bottom: 0.5rem;
     margin-top: 1px;
+}
+
+@media (max-width:480px) {
+    .grid{
+        padding: 1px 10px 60px;
+    }
 }

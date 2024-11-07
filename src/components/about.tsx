@@ -1,15 +1,22 @@
 import "@/styles/about.css"
+import ResumeBtn from "./resume-btn"
 
 
 export default function About() {
   return (
-    <section id="about" className="section">
+    <section className="section">
       <h2 className="title">
         About Me
       </h2>
       <p className="paragraph">
-        I am a Frontend Web Developer passionate about creating beautiful and user-friendly interfaces using ReactJS and NextJS. Currently, I am focused on becoming a full-stack developer, allowing me to work on both the front end and back end of applications. I enjoy transforming ideas into reality by developing new features and optimizing existing ones, always writing clean and maintainable code. Outside of coding, I explore new technologies and stay updated on the latest trends in web development, believing in continuous learning and seeking opportunities to enhance my skills.
+        {`I’m a Full Stack Developer skilled in ReactJS and NextJS, focusing on building responsive, user-friendly interfaces. I continuously learn and adapt to the latest web trends to create optimized and maintainable code.`}
       </p>
+      <div>
+        <ResumeBtn
+          href="/about"
+          text="Get to Know Me"
+        />
+      </div>
     </section>
   );
 }

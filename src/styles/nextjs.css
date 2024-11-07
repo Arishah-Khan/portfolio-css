@@ -1,5 +1,5 @@
 .projects-main {
-    background-color: #ebeae9;
+    background-color: #f2ece3;
     padding: 2.5rem 0;
 }
 
@@ -21,27 +21,33 @@
 .pro-grid {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    gap: 30px;
+    padding: 10px;
 }
+.sectionHeading{
+    font-size: 16px;
+  }
+  .projectDescription{
+    font-size: 12px;
+    color: #4e3d26;
+  }
 
 @media (min-width: 768px) {
     .pro-grid {
         flex-direction: row;
     }
-}
-
-/* Ice Cream Project Styles */
-.ice-bg {
-    background-color: #d6206b;
-}
-
-.ice-hover-bg {
-    background-color: #f5d0e0;
-    border: 2px solid #d6206b;
+    .sectionHeading{
+        font-size: 22px;
+      }
+      .projectDescription{
+        font-size: 16px;
+      }
+      .pro-grid{
+        padding: 30px;
+      }
 }
 
 .ice-heading {
@@ -53,15 +59,7 @@
     background-color: #fdc8df;
 }
 
-/* Grocery Project Styles */
-.grocery-bg {
-    background-color: #1e5e3f;
-}
 
-.grocery-hover-bg {
-    background-color: #dddad0;
-    border: 2px solid #1e5e3f;
-}
 
 .grocery-heading {
     color: #1e5e3f;
@@ -72,11 +70,11 @@
     background-color: #c5ead8;
 }
 
-/* Shared Styles */
-.text-white {
-    color: white;
+.agency-heading {
+    color: #5b1a91;
+    border-color: #5b1a91;
 }
 
-.hover-black:hover {
-    color: black;
+.agency-card-bg {
+    background-color: #dcc1f8;
 }

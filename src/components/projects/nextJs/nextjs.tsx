@@ -7,10 +7,10 @@ const projects = [
         images: ["/images/ice1.png", "/images/ice2.png", "/images/ice3.png"],
         demoLink: "https://nextjs-single-page-website.vercel.app/",
         codeLink: "https://github.com/Arishah-Khan/Nextjs-Single-Page-website",
-        bgColor: "ice-bg", 
+        bgColor: "#d6206b", 
+        textColor: "white", 
         hoverBgColor: "ice-hover-bg", 
-        textColor: "text-white", 
-        hoverTextColor: "hover-black", 
+        hoverTextColor: "black", 
         headingColour: "ice-heading", 
         cardbg: "ice-card-bg", 
     },
@@ -19,12 +19,24 @@ const projects = [
         images: ["/images/grocery1.png", "/images/grocery2.png" , "/images/grocery3.png"],
         demoLink: "https://multipage-website-nextjs.vercel.app/",
         codeLink: "https://github.com/Arishah-Khan/multipage-website-nextjs",
-        bgColor: "grocery-bg", 
+        bgColor: "#1e5e3f", 
+        textColor: "white", 
         hoverBgColor: "grocery-hover-bg", 
-        textColor: "text-white", 
-        hoverTextColor: "hover-black", 
+        hoverTextColor: "black", 
         headingColour: "grocery-heading",
         cardbg: "grocery-card-bg",
+    },
+    {
+        name: "Agency Website",
+        images: ["/images/agency1.png", "/images/agency2.png" , "/images/agency3.png"],
+        demoLink: "https://nextjs-css-kohl.vercel.app/",
+        codeLink: "https://github.com/Arishah-Khan/nextjs-css",
+        bgColor: "#5b1a91", 
+        hoverBgColor: "agency-hover-bg", 
+        textColor: "white", 
+        hoverTextColor: "black", 
+        headingColour: "agency-heading",
+        cardbg: "agency-card-bg",
     },
 ];
 
@@ -32,8 +44,8 @@ export default function NextJsProjects() {
     return (
         <main className="projects-main">
             <section>
-                <h3>NextJs Projects</h3>
-                <p>
+                <h3 className="sectionHeading">NextJs Projects</h3>
+                <p className="projectDescription">
                     Here are some of the projects I have created using NextJs and Tailwind CSS.
                 </p>
 

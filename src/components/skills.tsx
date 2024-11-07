@@ -1,6 +1,5 @@
 import Image from "next/image";
-import "@/styles/skills.css" // Import the CSS module
-
+import "@/styles/skills.css" 
 
 
 export default function Skills() {

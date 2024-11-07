@@ -1,5 +1,10 @@
-/* Projects.css */
 .projects-main {
-    padding-bottom: 1.5rem; /* pb-6 equivalent */
-    background-color: #ebeae9; /* bg-[#ebeae9] equivalent */
+    padding: 10px 0px 40px; 
+    background-color: #f2ece3;
+}
+
+@media (max-width:481px) {
+    .projects-main{
+        padding: 8px 0 40px;
+    }
 }

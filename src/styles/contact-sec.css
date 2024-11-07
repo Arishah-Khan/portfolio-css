@@ -1,0 +1,85 @@
+.contact-section {
+    background-color: #f2ece3;
+    padding: 2.5rem 0;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+}
+
+.section-title {
+    color: #071fa8;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.intro-text, .outro-text {
+    color: #6b7280;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.email-info {
+    color: #4b5563;
+    font-size: 18px;
+}
+
+.email-link {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    gap: 1.5rem;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 9999px;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.linkedin{
+    background-color: #0077B5;
+}
+
+.linkedin:hover {
+    background-color: #005582;
+}
+
+.github {
+    background-color: #000000;
+}
+
+.github:hover {
+    background-color: #181717;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #e1306c, #f77737, #fcaf45);
+}
+
+.instagram:hover {
+    opacity: 0.8;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.width{
+    color: #f2ece3;
+}
+
