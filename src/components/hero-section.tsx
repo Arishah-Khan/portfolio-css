@@ -31,7 +31,7 @@ export default function HeroSec() {
             </div>
 
             <div className="image-container">
-\                <div className="gradient-bg">
+                <div className="gradient-bg">
                     <Image
                         src="/images/Gradient.svg"
                         alt="Gradient Background"
